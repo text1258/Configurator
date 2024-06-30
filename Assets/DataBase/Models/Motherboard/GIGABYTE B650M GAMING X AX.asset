@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461fc97466d7e654bb0eba5709dadefe, type: 3}
+  m_Name: GIGABYTE B650M GAMING X AX
+  m_EditorClassIdentifier: 
+  ComponentModelName: GIGABYTE B650M GAMING X AX
+  CompinentModelDescription: 
+  ComponentPC: {fileID: 11400000, guid: 0efe99abcda41ef45b5132f364c61c0f, type: 2}
+  Prefab: {fileID: 0}
+  MotherboardStand: {fileID: 0}
+  CPU_Socet: {fileID: 11400000, guid: 04dea0f53a8910445a5ae96299db2862, type: 2}

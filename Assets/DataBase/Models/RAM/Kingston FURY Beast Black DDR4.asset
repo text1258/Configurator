@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a0acd3465a6514791dc19f17102c4d, type: 3}
+  m_Name: Kingston FURY Beast Black DDR4
+  m_EditorClassIdentifier: 
+  ComponentModelName: Kingston FURY Beast Black DDR4
+  CompinentModelDescription: 
+  ComponentPC: {fileID: 11400000, guid: 43db19a55b3f78d4991f4087ab10504a, type: 2}
