@@ -20,4 +20,4 @@ MonoBehaviour:
     (20 + 4 pin), CPU (4+4 pin x2), PCI-E (6+2 pin x4), SATA (15-pin), Molex (4-pin)
     (\u0446\u0435\u043D\u0430 6499 \u0440)"
   ComponentPC: {fileID: 11400000, guid: 3416a8e190d7c4b43bb5f7e8b79d593d, type: 2}
-  Prefab: {fileID: 2687786779483172840, guid: d4e4e0179be39834188452a35a9355df, type: 3}
+  Prefab: {fileID: 3989411671838861788, guid: 283f9812e57301140914aa0f30053b03, type: 3}
