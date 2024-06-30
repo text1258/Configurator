@@ -5,7 +5,6 @@ using UnityEngine.Events;
 public class ComponentPC : MonoBehaviour
 {
     [SerializeField] private DataComponentModelPC model;
-    public CreatorOfPC PC;
     public Material Material;
     public GameObject ApplyingModel;
     public Vector3 MultypluingStrokeSize = Vector3.one;
@@ -13,18 +12,12 @@ public class ComponentPC : MonoBehaviour
     public bool CreateStrokeOnStart;
     public List<VisualComponentModel> VisualModels;
     public UnityEvent<DataComponentModelPC> onModelChange;
-    public UnityEvent OnError;
 
     public DataComponentModelPC Model
     {
         get => model; 
         set
         {
-            if (value.IsCompatible(PC) == false)
-            {
-                OnError?.Invoke();
-                return;
-            }
             model = value;
             onModelChange?.Invoke(value);
         }

@@ -1,4 +1,7 @@
+using System.ComponentModel;
+using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CreatorOfPC : MonoBehaviour
 {
@@ -18,6 +21,7 @@ public class CreatorOfPC : MonoBehaviour
     public GameObject RAM_Model2;
     public GameObject HardDrive_Model;
     public GameObject PowerUnit_Model;
+    public UnityEvent OnError;
 
     public DataComponentModelPC VideoCard
     {
@@ -66,6 +70,10 @@ public class CreatorOfPC : MonoBehaviour
             _CPU = (CPUData)value;
             Destroy(CPU_Model);
             CPU_Model = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.CPU_Point.position, Quaternion.identity, parent: transform);
+            if (_CPU.IsCompatible(this) == false)
+            {
+                OnError?.Invoke();
+            }
         }
     }
     public DataComponentModelPC Motherboard
@@ -76,9 +84,18 @@ public class CreatorOfPC : MonoBehaviour
             _Motherboard = (MotherboardData)value;
             Destroy(Motherboard_Model);
             Motherboard_Model = Instantiate(value.Prefab, position: MotherboardPoint.position, Quaternion.identity, parent: transform);
-            CPU = CPU;
-            RAM = RAM;
-            VideoCard = VideoCard;
+            if (_Motherboard.IsCompatible(this) == false)
+            {
+                OnError?.Invoke();
+            }
+            Destroy(CPU_Model);
+            CPU_Model = Instantiate(CPU.Prefab, position: _Motherboard.MotherboardStand.CPU_Point.position, Quaternion.identity, parent: transform);
+            Destroy(RAM_Model1);
+            Destroy(RAM_Model2);
+            RAM_Model1 = Instantiate(RAM.Prefab, position: _Motherboard.MotherboardStand.RAM_Point1.position, Quaternion.identity, parent: transform);
+            RAM_Model2 = Instantiate(RAM.Prefab, position: _Motherboard.MotherboardStand.RAM_Point2.position, Quaternion.identity, parent: transform);
+            Destroy(VideoCard_Model);
+            VideoCard_Model = Instantiate(VideoCard.Prefab, position: _Motherboard.MotherboardStand.VideoCard_Point.position, Quaternion.identity, parent: transform);
         }
     }
 }

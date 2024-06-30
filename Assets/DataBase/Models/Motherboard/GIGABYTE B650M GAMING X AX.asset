@@ -15,6 +15,6 @@ MonoBehaviour:
   ComponentModelName: GIGABYTE B650M GAMING X AX
   CompinentModelDescription: 
   ComponentPC: {fileID: 11400000, guid: 0efe99abcda41ef45b5132f364c61c0f, type: 2}
-  Prefab: {fileID: 0}
-  MotherboardStand: {fileID: 0}
+  Prefab: {fileID: 8855641546501194242, guid: 52746f62f3fdbc1449c5e55ed782d3cd, type: 3}
+  MotherboardStand: {fileID: 2868305840322463511, guid: 52746f62f3fdbc1449c5e55ed782d3cd, type: 3}
   CPU_Socet: {fileID: 11400000, guid: 04dea0f53a8910445a5ae96299db2862, type: 2}
