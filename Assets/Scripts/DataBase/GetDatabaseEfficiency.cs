@@ -20,7 +20,8 @@ public class GetDatabaseEfficiency : MonoBehaviour
 {
     
     private SQLiteConnection db;
-    
+    public CreatorOfPC PC;
+
     public void Awake() 
     {   
         var databasePath = "Assets/DataBase/EfficiencyDB.db"; // Получения пути к базе
@@ -28,8 +29,8 @@ public class GetDatabaseEfficiency : MonoBehaviour
         db.CreateTable<PCComponents>(); // Создание таблицы комплектующих, если отсутствует
 
         // Пример кода
-        int ef = getEfficiency("AMD_Ryzen_5_7500F_OEM", "GIGABYTE_B650M_GAMING_X_AX", "Kingston_FURY_Beast_Black_DDR5", "KFA2_GeForce_RTX_4060_Ti_CORE", "Seagate_BarraCuda_2TB", "Chieftec_PowerUP_750W"); // Вызов функции проверки эффективности
-        Debug.Log(ef);
+        //int ef = getEfficiency("AMD_Ryzen_5_7500F_OEM", "GIGABYTE_B650M_GAMING_X_AX", "Kingston_FURY_Beast_Black_DDR5", "KFA2_GeForce_RTX_4060_Ti_CORE", "Seagate_BarraCuda_2TB", "Chieftec_PowerUP_750W"); // Вызов функции проверки эффективности
+        //Debug.Log(ef);
     }
 
     public int getEfficiency(string CPU, string Motherboard, string RAM, string Videocard, string HDD, string PowerUnit) // Функция получения эффективности
@@ -39,6 +40,12 @@ public class GetDatabaseEfficiency : MonoBehaviour
             if (!string.IsNullOrEmpty(test[0].Efficiency))
                 return int.Parse(test[0].Efficiency); // Перевод эффективности в Int
         return 0;
+    }
+
+    [ContextMenu("Get Efficiency")]
+    public int getEfficiency()
+    {
+        return getEfficiency(PC.CPU.ComponentModelName, PC.Motherboard.ComponentModelName, PC.RAM.ComponentModelName, PC.VideoCard.ComponentModelName, PC.HardDrive.ComponentModelName, PC.PowerUnit.ComponentModelName);
     }
 }
 

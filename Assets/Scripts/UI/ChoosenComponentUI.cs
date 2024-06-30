@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using static TMPro.TMP_Dropdown;
 
 public class ChoosenComponentUI : MonoBehaviour
@@ -9,6 +10,9 @@ public class ChoosenComponentUI : MonoBehaviour
     public TMP_Dropdown ModelChooser;
     public TMP_Text CompinentModelDescriptionText;
     public AllComponentModels ComponentModels;
+    public GetDatabaseEfficiency efficiencyDatabaser;
+    public TMP_Text efficiencyPercentLabel;
+    public Image efficiencyBar;
 
     public void UpdateUI(ComponentPC componentPC)
     {
@@ -24,12 +28,20 @@ public class ChoosenComponentUI : MonoBehaviour
             }
         }
         ModelChooser.AddOptions(modelChooserOptions);
-        ModelChooser.value = modelChooserOptions.IndexOf(modelChooserOptions.Find(x => x.text == componentPC.Model.ComponentModelName));
+        ModelChooser.value = modelChooserOptions.IndexOf(modelChooserOptions.Find(x => x.text == componentPC.Model.ComponentModelName.Replace("_", " ")));
         ModelChooser.onValueChanged.AddListener(
             (int modelIndex) => 
             {
                 componentPC.Model = ComponentModels.ComponentModelsPC.Find(x => x.ComponentModelName == ModelChooser.options[modelIndex].text);
+                CompinentModelDescriptionText.text = componentPC.Model.CompinentModelDescription;
             });
         CompinentModelDescriptionText.text = componentPC.Model.CompinentModelDescription;
+    }
+
+    public void UpdateEfficiencyUI()
+    {
+        int efficiency = efficiencyDatabaser.getEfficiency();
+        efficiencyPercentLabel.text = efficiency.ToString();
+        efficiencyBar.fillAmount = efficiency/100f;
     }
 }

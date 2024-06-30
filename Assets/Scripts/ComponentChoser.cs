@@ -9,12 +9,7 @@ public class ComponentChoser : MonoBehaviour
 
     public void Choose(ComponentPC component)
     {
-        if (ChoosenComponent != null)
-        {
-            ChoosenComponent.DeleteStroke();
-        }
         ChoosenComponent = component;
-        ChoosenComponent.Stroke(ChoosenMaterial);
         OnChoose?.Invoke(ChoosenComponent);
     }
 }

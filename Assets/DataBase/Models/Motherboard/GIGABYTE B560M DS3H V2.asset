@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461fc97466d7e654bb0eba5709dadefe, type: 3}
   m_Name: GIGABYTE B560M DS3H V2
   m_EditorClassIdentifier: 
-  ComponentModelName: GIGABYTE B560M DS3H V2
-  CompinentModelDescription: 
+  ComponentModelName: GIGABYTE_B560M_DS3H_V2
+  CompinentModelDescription: "\u0441\u043E\u043A\u0435\u0442 \u2013 LGA 1200, \u0447\u0438\u043F\u0441\u0435\u0442
+    \u2013 Intel B560, \u0442\u0438\u043F \u043F\u0430\u043C\u044F\u0442\u0438 \u2013
+    DDR4, \u0442\u0430\u043A\u0442\u043E\u0432\u0430\u044F \u2013 3200\u041C\u0413\u0446,
+    \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0441\u043B\u043E\u0442\u043E\u0432
+    \u043F\u0430\u043C\u044F\u0442\u0438 \u2013 4, \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u043C\u0430\u044F
+    \u043F\u0430\u043C\u044F\u0442\u044C \u2013 DIMM, \u0444\u043E\u0440\u043C-\u0444\u0430\u043A\u0442\u043E\u0440
+    \u2013 Micro-ATX, \u0432\u044B\u0441\u043E\u0442\u0430 \u2013 244\u043C\u043C,
+    \u0448\u0438\u0440\u0438\u043D\u0430 \u2013 244\u043C\u043C (\u0446\u0435\u043D\u0430
+    8999\u0440)"
   ComponentPC: {fileID: 11400000, guid: 0efe99abcda41ef45b5132f364c61c0f, type: 2}
-  Prefab: {fileID: 0}
-  MotherboardStand: {fileID: 0}
+  Prefab: {fileID: 8098789964255867763, guid: ac4f0983a8fc09c439cf67b3561db31b, type: 3}
+  MotherboardStand: {fileID: 3264939820719568486, guid: ac4f0983a8fc09c439cf67b3561db31b, type: 3}
   CPU_Socet: {fileID: 11400000, guid: 363652ec0a21c48498f4af57c681cfdf, type: 2}

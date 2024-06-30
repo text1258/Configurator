@@ -12,12 +12,12 @@ public class CreatorOfPC : MonoBehaviour
     [SerializeField] private DataComponentModelPC _HardDrive;
     [SerializeField] private DataComponentModelPC _PowerUnit;
 
-    // Точки появления комплектующих на сцене (я верно говорю?)
+    // Точки появления комплектующих на сцене
     public Transform HardDrivePoint;
     public Transform PowerUnitPoint;
     public Transform MotherboardPoint;
     
-    // Модели (что оно делает, объяснить)
+    // Модели на сцене
     public GameObject CPU_Model;
     public GameObject Motherboard_Model;
     public GameObject VideoCard_Model;
@@ -42,7 +42,8 @@ public class CreatorOfPC : MonoBehaviour
     // Re-creates RAM when an object is changed
     public DataComponentModelPC RAM
     {
-        get => _RAM; set
+        get => _RAM;
+        set
         {
             _RAM = value;
 
@@ -57,7 +58,8 @@ public class CreatorOfPC : MonoBehaviour
     // Re-creates the hard disk in case of a change
     public DataComponentModelPC HardDrive
     {
-        get => _HardDrive; set
+        get => _HardDrive; 
+        set
         {
             _HardDrive = value;
             Destroy(HardDrive_Model);
@@ -68,7 +70,8 @@ public class CreatorOfPC : MonoBehaviour
     // Rebuilds the power supply in case of a change
     public DataComponentModelPC PowerUnit
     {
-        get => _PowerUnit; set
+        get => _PowerUnit;
+        set
         {
             _PowerUnit = value;
             Destroy(PowerUnit_Model);

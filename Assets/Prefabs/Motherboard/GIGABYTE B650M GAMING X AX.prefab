@@ -1,5 +1,111 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3614166790387588870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3614166790387588869}
+  - component: {fileID: 3614166790387588868}
+  m_Layer: 0
+  m_Name: RAM point 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3614166790387588869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614166790387588870}
+  m_LocalRotation: {x: 0.000000029802322, y: 0.000000014901161, z: -0.0000004991889, w: 1}
+  m_LocalPosition: {x: 0.06481898, y: 0.0050697494, z: 0.032000013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8855641546501194245}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 30}
+--- !u!95 &3614166790387588868
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3614166790387588870}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1878c17f434b2ce4a9d395f23cd37244, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &4451737767568169762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4451737767568169761}
+  - component: {fileID: 4451737767568169760}
+  m_Layer: 0
+  m_Name: RAM point 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4451737767568169761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4451737767568169762}
+  m_LocalRotation: {x: 0.000000029802322, y: 0.000000014901161, z: -0.0000004991889, w: 1}
+  m_LocalPosition: {x: 0.073377565, y: 0.0050936546, z: 0.032000013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8855641546501194245}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 30}
+--- !u!95 &4451737767568169760
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4451737767568169762}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1878c17f434b2ce4a9d395f23cd37244, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6464536672732304829
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,6 +201,8 @@ Transform:
   - {fileID: 9038502816666896173}
   - {fileID: 8375462428698163471}
   - {fileID: 3497015691593276021}
+  - {fileID: 4451737767568169761}
+  - {fileID: 3614166790387588869}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -134,8 +242,8 @@ MonoBehaviour:
   MotherboardModel: {fileID: 11400000, guid: 54e6b28f356f813469f3461673eb3758, type: 2}
   CPU_Point: {fileID: 8375462428698163471}
   VideoCard_Point: {fileID: 3497015691593276021}
-  RAM_Point1: {fileID: 0}
-  RAM_Point2: {fileID: 0}
+  RAM_Point1: {fileID: 4451737767568169761}
+  RAM_Point2: {fileID: 3614166790387588869}
 --- !u!1001 &8855641545579241670
 PrefabInstance:
   m_ObjectHideFlags: 0
