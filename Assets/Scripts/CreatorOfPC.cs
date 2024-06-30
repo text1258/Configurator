@@ -1,5 +1,3 @@
-using System.ComponentModel;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -30,7 +28,7 @@ public class CreatorOfPC : MonoBehaviour
         {
             _VideoCard = value;
             Destroy(VideoCard_Model);
-            VideoCard_Model = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.VideoCard_Point.position, Quaternion.identity, parent: transform);
+            VideoCard_Model = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.VideoCard_Point.position, _Motherboard.MotherboardStand.VideoCard_Point.rotation, parent: transform);
         }
     }
     public DataComponentModelPC RAM
@@ -40,8 +38,8 @@ public class CreatorOfPC : MonoBehaviour
             _RAM = value;
             Destroy(RAM_Model1);
             Destroy(RAM_Model2);
-            RAM_Model1 = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.RAM_Point1.position, Quaternion.identity, parent: transform);
-            RAM_Model2 = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.RAM_Point2.position, Quaternion.identity, parent: transform);
+            RAM_Model1 = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.RAM_Point1.position, _Motherboard.MotherboardStand.RAM_Point1.rotation, parent: transform);
+            RAM_Model2 = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.RAM_Point2.position, _Motherboard.MotherboardStand.RAM_Point2.rotation, parent: transform);
         }
     }
     public DataComponentModelPC HardDrive
@@ -50,7 +48,7 @@ public class CreatorOfPC : MonoBehaviour
         {
             _HardDrive = value;
             Destroy(HardDrive_Model);
-            HardDrive_Model = Instantiate(value.Prefab, position: HardDrivePoint.position, Quaternion.identity, parent: transform);
+            HardDrive_Model = Instantiate(value.Prefab, position: HardDrivePoint.position, HardDrivePoint.rotation, parent: transform);
         }
     }
     public DataComponentModelPC PowerUnit
@@ -59,7 +57,7 @@ public class CreatorOfPC : MonoBehaviour
         {
             _PowerUnit = value;
             Destroy(PowerUnit_Model);
-            PowerUnit_Model = Instantiate(value.Prefab, position: PowerUnitPoint.position, Quaternion.identity, parent: transform);
+            PowerUnit_Model = Instantiate(value.Prefab, position: PowerUnitPoint.position, PowerUnitPoint.rotation, parent: transform);
         }
     }
     public DataComponentModelPC CPU
@@ -69,7 +67,7 @@ public class CreatorOfPC : MonoBehaviour
         {
             _CPU = (CPUData)value;
             Destroy(CPU_Model);
-            CPU_Model = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.CPU_Point.position, Quaternion.identity, parent: transform);
+            CPU_Model = Instantiate(value.Prefab, position: _Motherboard.MotherboardStand.CPU_Point.position, _Motherboard.MotherboardStand.CPU_Point.rotation, parent: transform);
             if (_CPU.IsCompatible(this) == false)
             {
                 OnError?.Invoke();
@@ -83,19 +81,19 @@ public class CreatorOfPC : MonoBehaviour
         {
             _Motherboard = (MotherboardData)value;
             Destroy(Motherboard_Model);
-            Motherboard_Model = Instantiate(value.Prefab, position: MotherboardPoint.position, Quaternion.identity, parent: transform);
+            Motherboard_Model = Instantiate(value.Prefab, position: MotherboardPoint.position, MotherboardPoint.rotation, parent: transform);
             if (_Motherboard.IsCompatible(this) == false)
             {
                 OnError?.Invoke();
             }
             Destroy(CPU_Model);
-            CPU_Model = Instantiate(CPU.Prefab, position: _Motherboard.MotherboardStand.CPU_Point.position, Quaternion.identity, parent: transform);
+            CPU_Model = Instantiate(CPU.Prefab, position: _Motherboard.MotherboardStand.CPU_Point.position, _Motherboard.MotherboardStand.CPU_Point.rotation, parent: transform);
             Destroy(RAM_Model1);
             Destroy(RAM_Model2);
-            RAM_Model1 = Instantiate(RAM.Prefab, position: _Motherboard.MotherboardStand.RAM_Point1.position, Quaternion.identity, parent: transform);
-            RAM_Model2 = Instantiate(RAM.Prefab, position: _Motherboard.MotherboardStand.RAM_Point2.position, Quaternion.identity, parent: transform);
+            RAM_Model1 = Instantiate(RAM.Prefab, position: _Motherboard.MotherboardStand.RAM_Point1.position, _Motherboard.MotherboardStand.RAM_Point1.rotation, parent: transform);
+            RAM_Model2 = Instantiate(RAM.Prefab, position: _Motherboard.MotherboardStand.RAM_Point2.position, _Motherboard.MotherboardStand.RAM_Point2.rotation, parent: transform);
             Destroy(VideoCard_Model);
-            VideoCard_Model = Instantiate(VideoCard.Prefab, position: _Motherboard.MotherboardStand.VideoCard_Point.position, Quaternion.identity, parent: transform);
+            VideoCard_Model = Instantiate(VideoCard.Prefab, position: _Motherboard.MotherboardStand.VideoCard_Point.position, _Motherboard.MotherboardStand.VideoCard_Point.rotation, parent: transform);
         }
     }
 }

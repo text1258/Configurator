@@ -11,7 +11,7 @@ public class ComponentChoser : MonoBehaviour
     {
         if (ChoosenComponent != null)
         {
-            ChoosenComponent.Stroke();
+            ChoosenComponent.DeleteStroke();
         }
         ChoosenComponent = component;
         ChoosenComponent.Stroke(ChoosenMaterial);

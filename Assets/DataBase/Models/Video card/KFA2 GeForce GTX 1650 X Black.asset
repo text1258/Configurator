@@ -15,3 +15,4 @@ MonoBehaviour:
   ComponentModelName: KFA2 GeForce GTX 1650 X Black
   CompinentModelDescription: 
   ComponentPC: {fileID: 11400000, guid: 1097095d1703479498cb5c61d2d707f7, type: 2}
+  Prefab: {fileID: 1607434218058278768, guid: b464ce6df7138214996134e89ae1d375, type: 3}

@@ -31,6 +31,37 @@ Transform:
   m_Father: {fileID: 8855641546501194245}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7710395242430068686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3497015691593276021}
+  m_Layer: 0
+  m_Name: Video card point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3497015691593276021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7710395242430068686}
+  m_LocalRotation: {x: 0.5015467, y: 0.49844855, z: 0.49844855, w: 0.5015467}
+  m_LocalPosition: {x: -0.027169276, y: 0.0071414374, z: -0.045400012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8855641546501194245}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 119.645, z: 0}
 --- !u!1 &8855641546501194242
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,6 +94,7 @@ Transform:
   m_Children:
   - {fileID: 9038502816666896173}
   - {fileID: 8375462428698163471}
+  - {fileID: 3497015691593276021}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -101,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MotherboardModel: {fileID: 11400000, guid: 54e6b28f356f813469f3461673eb3758, type: 2}
   CPU_Point: {fileID: 8375462428698163471}
-  VideoCard_Point: {fileID: 0}
+  VideoCard_Point: {fileID: 3497015691593276021}
   RAM_Point1: {fileID: 0}
   RAM_Point2: {fileID: 0}
 --- !u!1001 &8855641545579241670
@@ -155,9 +187,97 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1217
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0228
+      objectReference: {fileID: 0}
+    - target: {fileID: -5477749408508380018, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0469
+      objectReference: {fileID: 0}
+    - target: {fileID: -3274006528333456403, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0887
+      objectReference: {fileID: 0}
+    - target: {fileID: -3274006528333456403, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: -3274006528333456403, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02923
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0719
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: -1255605710908113952, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02923
+      objectReference: {fileID: 0}
+    - target: {fileID: -1230948793024970221, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06851171
+      objectReference: {fileID: 0}
+    - target: {fileID: -1230948793024970221, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.08572
+      objectReference: {fileID: 0}
+    - target: {fileID: -1230948793024970221, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00826
+      objectReference: {fileID: 0}
+    - target: {fileID: -1230948793024970221, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03999
+      objectReference: {fileID: 0}
+    - target: {fileID: -701398570962844126, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0248
+      objectReference: {fileID: 0}
+    - target: {fileID: -701398570962844126, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0083
+      objectReference: {fileID: 0}
+    - target: {fileID: -701398570962844126, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0769
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
       propertyPath: m_Name
       value: GIGABYTE B650M GAMING X AX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0626
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083501151425157549, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02923
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306643203051859313, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.081
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306643203051859313, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306643203051859313, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02923
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae156a4c017e80145b6e6f4fc7d91727, type: 3}

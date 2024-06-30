@@ -5,11 +5,9 @@ using UnityEngine.Events;
 public class ComponentPC : MonoBehaviour
 {
     [SerializeField] private DataComponentModelPC model;
-    public Material Material;
     public GameObject ApplyingModel;
     public Vector3 MultypluingStrokeSize = Vector3.one;
     public GameObject StrokeObject;
-    public bool CreateStrokeOnStart;
     public List<VisualComponentModel> VisualModels;
     public UnityEvent<DataComponentModelPC> onModelChange;
 
@@ -21,19 +19,6 @@ public class ComponentPC : MonoBehaviour
             model = value;
             onModelChange?.Invoke(value);
         }
-    }
-
-    private void Start()
-    {
-        if (CreateStrokeOnStart)
-        {
-            Stroke();
-        }
-    }
-
-    public void Stroke()
-    {
-        Stroke(Material);
     }
 
     public void Stroke(Material material)
