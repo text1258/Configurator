@@ -15,5 +15,5 @@ MonoBehaviour:
   ComponentModelName: AMD Ryzen 5 7500F OEM
   CompinentModelDescription: 
   ComponentPC: {fileID: 11400000, guid: d1b7ed3daf604864a842f7e92fcc08a8, type: 2}
-  Prefab: {fileID: 0}
+  Prefab: {fileID: 2492281302378181294, guid: 359dcfba0257c2445b90acdf309fc7c7, type: 3}
   CPU_Socet: {fileID: 11400000, guid: 04dea0f53a8910445a5ae96299db2862, type: 2}

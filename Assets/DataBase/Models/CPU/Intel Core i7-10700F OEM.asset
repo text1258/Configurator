@@ -15,5 +15,5 @@ MonoBehaviour:
   ComponentModelName: Intel Core i7-10700F OEM
   CompinentModelDescription: 
   ComponentPC: {fileID: 11400000, guid: d1b7ed3daf604864a842f7e92fcc08a8, type: 2}
-  Prefab: {fileID: 0}
+  Prefab: {fileID: 5004972388575438127, guid: d853a5b8e1bf42a41a91f635b4d9e682, type: 3}
   CPU_Socet: {fileID: 11400000, guid: 363652ec0a21c48498f4af57c681cfdf, type: 2}
