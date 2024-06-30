@@ -36,7 +36,8 @@ public class GetDatabaseEfficiency : MonoBehaviour
     {
         var test = db.Query<PCComponents>($"SELECT * FROM PCComponents WHERE CPU = '{CPU}' AND Motherboard = '{Motherboard}' AND RAM = '{RAM}' AND Videocard = '{Videocard}' AND HDD = '{HDD}' AND PowerUnit = '{PowerUnit}'"); // SQL запрос через поиск по комплектующим
         if (test.Any()) // Проверка, существует ли сборка в базе
-            return int.Parse(test[0].Efficiency); // Перевод эффективности в Int
+            if (!string.IsNullOrEmpty(test[0].Efficiency))
+                return int.Parse(test[0].Efficiency); // Перевод эффективности в Int
         return 0;
     }
 }

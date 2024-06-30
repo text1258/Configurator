@@ -15,3 +15,4 @@ MonoBehaviour:
   ComponentModelName: KFA2 GeForce RTX 4060 Ti CORE
   CompinentModelDescription: 
   ComponentPC: {fileID: 11400000, guid: 1097095d1703479498cb5c61d2d707f7, type: 2}
+  Prefab: {fileID: 2699513918974788467, guid: 75f780a5cc85bd8478b397729cc2842c, type: 3}

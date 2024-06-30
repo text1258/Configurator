@@ -15,3 +15,4 @@ MonoBehaviour:
   ComponentModelName: MSI GeForce RTX 3050 GAMING X
   CompinentModelDescription: 
   ComponentPC: {fileID: 11400000, guid: 1097095d1703479498cb5c61d2d707f7, type: 2}
+  Prefab: {fileID: 3154376530353230219, guid: bce132a62665dbf488c0c3512251c695, type: 3}
