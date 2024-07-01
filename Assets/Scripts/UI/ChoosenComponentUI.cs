@@ -28,7 +28,7 @@ public class ChoosenComponentUI : MonoBehaviour
             }
         }
         ModelChooser.AddOptions(modelChooserOptions);
-        ModelChooser.value = modelChooserOptions.IndexOf(modelChooserOptions.Find(x => x.text == componentPC.Model.ComponentModelName.Replace("_", " ")));
+        ModelChooser.value = modelChooserOptions.IndexOf(modelChooserOptions.Find(x => x.text == componentPC.Model.ComponentModelName));
         ModelChooser.onValueChanged.AddListener(
             (int modelIndex) => 
             {

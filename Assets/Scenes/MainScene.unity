@@ -628,7 +628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _CPU: {fileID: 11400000, guid: 2cd8eab3bab13284cb9dfff38ecc25f3, type: 2}
   _Motherboard: {fileID: 11400000, guid: 54e6b28f356f813469f3461673eb3758, type: 2}
-  _VideoCard: {fileID: 11400000, guid: f29c1afdc0d6d4c4b89673e43a005585, type: 2}
+  _VideoCard: {fileID: 11400000, guid: aebe48ab48d37e14a90343c314520cbc, type: 2}
   _RAM: {fileID: 11400000, guid: 03818c08b829246418b05d2c0bba444d, type: 2}
   _HardDrive: {fileID: 11400000, guid: fd6009f6c059983419f0845ae141d6ed, type: 2}
   _PowerUnit: {fileID: 11400000, guid: e39f3e828e13da24cb96dc8309b4fc52, type: 2}
@@ -3573,7 +3573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ChoosenComponent: {fileID: 0}
-  ChoosenMaterial: {fileID: 2100000, guid: cb07adbe6a93b7e4e8b3c0918b68418b, type: 2}
   OnChoose:
     m_PersistentCalls:
       m_Calls:
